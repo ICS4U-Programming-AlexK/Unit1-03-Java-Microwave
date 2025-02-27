@@ -15,7 +15,7 @@ public final class Microwave {
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("What are you heating? sub, pizza or soup?");
-        
+        // A minute is 60 seconds, so I converted it.
         int subTime = 60;
         int pizzaTime = 45;
         int soupTime = 105;

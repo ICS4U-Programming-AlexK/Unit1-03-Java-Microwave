@@ -26,6 +26,8 @@ final class Microwave {
     private static final int PIZZA_TIME = 45;
     /** Soup Time. */
     private static final int SOUP_TIME = 105;
+    /** Quantity for 2. */
+    private static final int QUANTITY_DIVIDE = 1.5;
 
     public static void main(final String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -60,7 +62,7 @@ final class Microwave {
         }
         int totalTime = baseTime;
         if (itemAmount == MINIMUM_AMOUNT) {
-            totalTime = (int) (baseTime * 1.5);
+            totalTime = (int) (baseTime * QUANTITY_DIVIDE);
         } else if (itemAmount == MAXIMUM_AMOUNT) {
             totalTime = baseTime * MINIMUM_AMOUNT;
         }
